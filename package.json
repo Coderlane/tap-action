@@ -4,7 +4,7 @@
   "description": "Annotate Pull Requests with Test Anything Protocol data",
   "main": "main.js",
   "scripts": {
-    "coverage": "jest --coverage",
+    "coverage": "nyc --reporter=lcov jest",
     "lint": "eslint .",
     "test": "jest"
   },
@@ -28,7 +28,8 @@
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-jest": "^23.13.1",
-    "jest": "^26.0.1"
+    "jest": "^26.0.1",
+    "nyc": "^15.0.1"
   },
   "dependencies": {
     "@actions/core": "^1.2.4"
