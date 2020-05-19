@@ -11,5 +11,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - run: npm ci
-    - run: npm test
+
+    - name: Setup
+      run: npm ci
+
+    - name: Test
+      run: npm run-script coverage
+
+    - name: Upload Coverage
+      uses: codecov/codecov-action@v1
+      with:
+       token: ${{ secrets.CODECOV_TOKEN }}
+       fail_ci_if_error: true
