@@ -1,0 +1,17 @@
+name: TAP Result Annotator
+description: Annotate Pull Requests with Test Anything Protocol data
+branding:
+  color: purple
+  icon: arrow-right-circle
+inputs:
+  tap_directory:
+    description: Directory where TAP files are, relative to workspace
+    required: false
+    default: ./
+  tap_extension:
+    description: File extension of TAP files
+    required: false
+    default: tap
+runs:
+  using: node12
+  main: main.js

@@ -1,0 +1,34 @@
+{
+  "name": "tap-action",
+  "version": "0.0.1",
+  "description": "Annotate Pull Requests with Test Anything Protocol data",
+  "main": "main.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Coderlane/tap-action.git"
+  },
+  "keywords": [
+    "GitHub",
+    "Actions",
+    "TAP"
+  ],
+  "author": "Travis Lane",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Coderlane/tap-action/issues"
+  },
+  "homepage": "https://github.com/Coderlane/tap-action#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "jest": "^26.0.1"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.4"
+  }
+}
