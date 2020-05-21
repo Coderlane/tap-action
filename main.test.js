@@ -52,4 +52,9 @@ describe('Main Tests', () => {
     const results = cp.execSync(`node ${ip}`, { env }).toString();
     expect(results.trim()).toStrictEqual(EMPTY_RESULTS.trim());
   });
+
+  test('parsing undefined results', () => {
+    const ip = path.join(__dirname, 'main.js');
+    expect(() => cp.execSync(`node ${ip}`)).toThrow();
+  });
 });
