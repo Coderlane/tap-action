@@ -11,7 +11,7 @@ inputs:
   tap_extension:
     description: File extension of TAP files
     required: false
-    default: tap
+    default: .tap
 outputs:
   tap_count:
     description: The total number of TAP tests
