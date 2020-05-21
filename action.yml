@@ -21,4 +21,4 @@ outputs:
     description: The total number of failing TAP tests
 runs:
   using: node12
-  main: main.js
+  main: dist/index.js

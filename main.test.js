@@ -46,8 +46,8 @@ describe('Main Tests', () => {
 
   test('parsing no results', () => {
     const { env } = process;
-    env.INPUT_TAP_DIRECTORY = '.';
-    env.INPUT_TAP_EXTENSION = '.tap';
+    env.INPUT_TAP_DIRECTORY = testDirPath;
+    env.INPUT_TAP_EXTENSION = '.pat';
     const ip = path.join(__dirname, 'main.js');
     const results = cp.execSync(`node ${ip}`, { env }).toString();
     expect(results.trim()).toStrictEqual(EMPTY_RESULTS.trim());

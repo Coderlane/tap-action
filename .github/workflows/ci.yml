@@ -23,3 +23,32 @@ jobs:
       with:
        token: ${{ secrets.CODECOV_TOKEN }}
        fail_ci_if_error: true
+
+  integration:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Setup
+      run: npm ci
+
+    - name: Build
+      run: npm run-script package
+
+    - name: Test
+      uses: ./
+      id: test
+      with:
+        tap_directory: ./test_data/
+
+    - name: Verify
+      env:
+        TAP_COUNT: ${{ steps.test.outputs.tap_count }}
+      run: |
+        if [ $TAP_COUNT -eq 2 ]
+        then
+          exit 0
+        else
+          echo "tap_count: $TAP_COUNT does not equal 2"
+          exit 1
+        fi

@@ -5,6 +5,7 @@
   "main": "main.js",
   "scripts": {
     "coverage": "nyc --reporter=lcov jest",
+    "package": "ncc build main.js -o dist",
     "lint": "eslint .",
     "test": "jest"
   },
@@ -24,6 +25,7 @@
   },
   "homepage": "https://github.com/Coderlane/tap-action#readme",
   "devDependencies": {
+    "@zeit/ncc": "^0.22.2",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
