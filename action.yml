@@ -12,7 +12,7 @@ inputs:
     description: File extension of TAP files
     required: false
     default: tap
-inputs:
+outputs:
   tap_count:
     description: The total number of TAP tests
   tap_pass:
