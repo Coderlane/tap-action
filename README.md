@@ -67,4 +67,4 @@ Similarly, you can create a comment on a pull request by [chaining the parser](h
 
 This action adds a little context to [a pull request](https://github.com/Coderlane/c-tap-test/pull/2).
 
-[![example](https://i.imgur.com/ANka0uk.png)]
+[![example](https://i.imgur.com/ANka0uk.png)](https://github.com/Coderlane/c-tap-test/pull/2)
