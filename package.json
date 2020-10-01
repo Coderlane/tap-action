@@ -34,7 +34,7 @@
     "nyc": "^15.0.1"
   },
   "dependencies": {
-    "@actions/core": "^1.2.4",
+    "@actions/core": "^1.2.6",
     "tap-parser": "^10.0.1"
   }
 }
