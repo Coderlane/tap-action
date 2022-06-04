@@ -12,12 +12,16 @@ not ok 2 - ../test_tap.c:test_tap:test_tap_fails: Assertion '0 != 0' failed: 0 =
 
 const TAP_RESULTS = `
 ::set-output name=tap_count::2
+
 ::set-output name=tap_pass::1
+
 ::set-output name=tap_fail::1`;
 
 const EMPTY_RESULTS = `
 ::set-output name=tap_count::0
+
 ::set-output name=tap_pass::0
+
 ::set-output name=tap_fail::0`;
 
 describe('Main Tests', () => {
@@ -32,7 +36,7 @@ describe('Main Tests', () => {
   });
 
   afterAll(() => {
-    fs.rmdirSync(testDirPath, { recursive: true });
+    fs.rmSync(testDirPath, { recursive: true });
   });
 
   test('parsing tap results', () => {

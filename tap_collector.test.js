@@ -47,7 +47,7 @@ describe('Collector Tests', () => {
   });
 
   afterAll(() => {
-    fs.rmdirSync(testDirPath, { recursive: true });
+    fs.rmSync(testDirPath, { recursive: true });
   });
 
   test('discovers tap files', () => expect(collector.discover(
