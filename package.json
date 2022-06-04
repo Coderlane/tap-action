@@ -28,13 +28,13 @@
     "@zeit/ncc": "^0.22.3",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jest": "^23.20.0",
-    "jest": "^26.6.3",
+    "jest": "^28.1.0",
     "nyc": "^15.1.0"
   },
   "dependencies": {
-    "@actions/core": "^1.2.6",
+    "@actions/core": "^1.8.2",
     "tap-parser": "^10.0.1"
   }
 }
