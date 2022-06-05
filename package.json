@@ -26,15 +26,15 @@
   "homepage": "https://github.com/Coderlane/tap-action#readme",
   "devDependencies": {
     "@zeit/ncc": "^0.22.3",
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint": "^8.17.0",
+    "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jest": "^23.20.0",
+    "eslint-plugin-jest": "^26.5.0",
     "jest": "^28.1.0",
     "nyc": "^15.1.0"
   },
   "dependencies": {
     "@actions/core": "^1.8.2",
-    "tap-parser": "^10.0.1"
+    "tap-parser": "^11.0.1"
   }
 }
